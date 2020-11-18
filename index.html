@@ -19,7 +19,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
 <script type="text/javascript">
     (async () => {
-    const loadingTask = pdfjsLib.getDocument("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf");
+    const loadingTask = pdfjsLib.getDocument("dummy.pdf");
     const pdf = await loadingTask.promise;
 
     // Load information from the first page.
