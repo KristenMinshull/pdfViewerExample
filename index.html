@@ -4,13 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <body> 
-        <div class="d-flex flex-column align-items-center justify-content-center flex-column">
-          <h1>PDF.js Previous/Next example</h1>
-          <div class="button-container">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
-          </div>
-          <canvas id="the-canvas"></canvas>
+        <div class="js-full-width-card-container mb-3 ml-2 mr-2 col-sm-12 col-xs-12">
+            <div class="d-flex flex-column align-items-center justify-content-center flex-column embed-responsive">
+            <h1>PDF.js Previous/Next example</h1>
+            <div class="button-container">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+            <canvas id="the-canvas"></canvas>
+            </div>
         </div>
     </body>
 </html>
@@ -37,7 +39,7 @@ loadingTask.promise.then(function(pdf) {
   pdf.getPage(pageNumber).then(function(page) {
     console.log('Page loaded');
     
-    var scale = 1.5;
+    var scale = 1.8;
     var viewport = page.getViewport({scale: scale});
 
     // Prepare canvas using PDF page dimensions
