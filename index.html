@@ -2,17 +2,16 @@
 <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <body>
-        <h1>PDF.js Previous/Next example</h1>
-        
-        <div>
-          <button id="prev">Previous</button>
-          <button id="next">Next</button>
-          &nbsp; &nbsp;
-          <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <body> 
+        <div class="d-flex flex-column align-items-center justify-content-center flex-column">
+          <h1>PDF.js Previous/Next example</h1>
+          <div class="button-container">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+          </div>
+          <canvas id="the-canvas"></canvas>
         </div>
-        
-        <canvas id="the-canvas"></canvas>
     </body>
 </html>
 
